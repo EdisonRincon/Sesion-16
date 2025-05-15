@@ -17,12 +17,25 @@
 
     </form>
     <script>
-        function Validar(){
-            let nombre = Document.getElementById("nombre").value;
+        function validar(){
+            let nombre = document.getElementById("nombre").value;
             if(nombre == ""){
                 alert("El nombre es obligatorio, ingreselo por favor...");
                 return false;
             }
+            
+            if (edad === "") {
+                alert("La edad es obligatoria.");
+                return false;
+            }
+
+            edad = Number(edad); // convertir a número
+
+            if (isNaN(edad) || edad < 18) {
+                alert("Debes ingresar una edad válida (18 años o más).");
+                return false;
+            }
+
             return true;
         }
     </script>
