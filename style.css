@@ -40,6 +40,6 @@ nav ul li a{
     padding: 10px 20px;
     display: inline-block;
 }
-navul li a:hover{
+nav ul li a:hover{
     background-color: #555;
 }
