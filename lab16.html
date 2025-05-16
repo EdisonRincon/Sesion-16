@@ -12,8 +12,8 @@
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Acerca de</a></li>
-                <li><a href=""></a>Servicios</li>
-                <li><a href=""></a>Contacto</li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -26,8 +26,8 @@
         <label for="">Contraseña</label>
         <input type="password" id="password" name="password">
         <label for="">Imagen de perfil</label>
-        <input type="file" id="imagen" name="imagen" accept="imagen" onchange="mostrarImagen">
-        <img id="ver-imagen" class="ver-imagen">
+        <input type="file" id="imagen" name="imagen" accept="image/*" onchange="mostrarImagen(event)">
+        <img id="ver-imagen" class="ver-imagen" src="#">
         <button type="submit">Registrar</button>
     </form>
     <script src="script.js"></script>
